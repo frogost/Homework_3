@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int a;
+    float b;
+    double c;
+    std::cout << "Адрес a=" << &a << std::endl;
+    std::cout << "Адрес b=" << &b << std::endl;
+    std::cout << "Адрес a=" << &c << std::endl;
+    int *pa=&a;
+    float *pb=&b;
+    double *pc=&c;
+    *pa=++2;
+    *pb=++2;
+    *pc=++2;
+    int *p;
+    std::cout << "указатель *p" << int (a)+int (b)+int (c)<< std::endl;
+    return 0;
+}
